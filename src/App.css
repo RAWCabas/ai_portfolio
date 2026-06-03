@@ -168,6 +168,12 @@ body {
   transition: all 0.2s ease;
 }
 
+.icon-link svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
 .icon-link:hover {
   background-color: #0f172a;
   color: #ffffff;
@@ -307,4 +313,97 @@ html {
   opacity: 1;
   transform: translate(0, 0);
   filter: blur(0);
+}
+
+/* ============================================
+   CONTACT LINKS — icon + label rows
+   ============================================ */
+.contact-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #cbd5e1;
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #f8fafc;
+}
+
+/* Icon bubble */
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover .contact-icon {
+  transform: scale(1.15);
+}
+
+.contact-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Facebook — blue accent */
+.contact-link:nth-child(1) .contact-icon {
+  background: rgba(24, 119, 242, 0.18);
+  color: #4a9eff;
+}
+.contact-link:nth-child(1):hover {
+  box-shadow: 0 0 20px rgba(24, 119, 242, 0.2);
+  border-color: rgba(24, 119, 242, 0.35);
+}
+
+/* Phone — green accent */
+.contact-link:nth-child(2) .contact-icon {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+}
+.contact-link:nth-child(2):hover {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.18);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+
+/* Email — amber accent */
+.contact-link:nth-child(3) .contact-icon {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+}
+.contact-link:nth-child(3):hover {
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.18);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.contact-label {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
