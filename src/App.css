@@ -1,0 +1,310 @@
+/* Reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121214;
+  /* Deep matte premium black/charcoal */
+  overflow-x: hidden;
+}
+
+.portfolio-container {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* --- NAVIGATION BAR --- */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 4rem;
+  z-index: 10;
+  /* Navbar plays on page-load via CSS keyframe, no JS needed */
+  animation: navSlideDown 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes navSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.logo-icon {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1e293b;
+  border: 2px solid #1e293b;
+  padding: 5px 10px;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f8fafc;
+  /* Crisp white-silver */
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #94a3b8;
+}
+
+.contact-btn {
+  background-color: #f8fafc;
+  color: #121214;
+  border: none;
+  padding: 0.75rem 1.6rem;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+/* --- HERO SPLIT AREA --- */
+.hero {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Left Section: Slate Grey Panel */
+.hero-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 53%;
+  background-color: #e2e8f0;
+  /* Premium cool slate grey */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0% 100%);
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+  padding-right: 1rem;
+}
+
+.hero-greeting {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.hero-name {
+  font-size: 4.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.05;
+  margin: 0.4rem 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-title {
+  font-size: 1.3rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+/* Social Icon Blocks */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3.5rem;
+}
+
+.icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: #cbd5e1;
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.icon-link:hover {
+  background-color: #0f172a;
+  color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Section: Deep Charcoal Panel holding your Photo */
+.hero-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 52%;
+  background-color: #121214;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 0;
+}
+
+/* ENLARGED PHOTO CONTROLLER */
+.hero-image {
+  height: 96vh;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  z-index: 2;
+}
+
+/* --- PREMIUM SCROLL SECTIONS DESIGN --- */
+html {
+  scroll-behavior: smooth;
+}
+
+.content-section {
+  min-height: 75vh;
+  padding: 8rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 0px;
+  overflow: hidden;
+}
+
+.section-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Heading styles with soft modern shadow */
+.content-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  width: fit-content;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 750px;
+}
+
+/* Alternating Premium Color Tones */
+.premium-light {
+  background-color: #f1f5f9;
+  /* Elegant off-white grey */
+  color: #0f172a;
+}
+
+.premium-light h2 {
+  color: #0f172a;
+  border-bottom: 4px solid #0f172a;
+  padding-bottom: 0.3rem;
+}
+
+.premium-dark {
+  background-color: #1e1e24;
+  /* Technical dark grey */
+  color: #f8fafc;
+}
+
+.premium-dark h2 {
+  color: #f8fafc;
+  border-bottom: 4px solid #f8fafc;
+  padding-bottom: 0.3rem;
+}
+
+/* ============================================
+   SLIDE-IN ANIMATION SYSTEM
+   Elements start hidden (off-screen) and gain
+   the 'is-visible' class via IntersectionObserver
+   ============================================ */
+
+/* Shared transition base */
+.slide-from-left,
+.slide-from-right,
+.slide-from-top,
+.slide-from-bottom {
+  opacity: 0;
+  transition:
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.75s ease;
+  will-change: opacity, transform;
+}
+
+/* Starting off-screen positions */
+.slide-from-left {
+  transform: translateX(-80px);
+  filter: blur(3px);
+}
+
+.slide-from-right {
+  transform: translateX(80px);
+  filter: blur(3px);
+}
+
+.slide-from-top {
+  transform: translateY(-60px);
+  filter: blur(3px);
+}
+
+.slide-from-bottom {
+  transform: translateY(60px);
+  filter: blur(3px);
+}
+
+/* Arrived — fully visible */
+.slide-from-left.is-visible,
+.slide-from-right.is-visible,
+.slide-from-top.is-visible,
+.slide-from-bottom.is-visible {
+  opacity: 1;
+  transform: translate(0, 0);
+  filter: blur(0);
+}
