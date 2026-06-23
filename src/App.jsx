@@ -123,6 +123,21 @@ function App() {
           <p className="slide-from-bottom" ref={portfolioBodyRef}>
             Showcasing production-ready frameworks, automation models, and application blueprints.
           </p>
+          
+          {/* SeismicOne Project Card */}
+          <div style={{ marginTop: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1rem', maxWidth: '350px', margin: '2.5rem auto 0 auto' }}>
+            {/* Sleek inline-styled earthquake SVG vector line icon */}
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M2 12h3l3-7 4 14 3-11 3 6h4" />
+            </svg>
+            
+            <h3 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#0f172a', margin: 0 }}>SeismicOne</h3>
+            <p style={{ fontSize: '1rem', color: '#475569', margin: 0 }}>An AI-assisted Earthquake app</p>
+            
+            <a href="https://rawcabas.github.io/seismic_one/" target="_blank" rel="noreferrer" style={{ marginTop: '0.5rem', display: 'inline-block', color: '#2563eb', fontWeight: '600', textDecoration: 'none' }}>
+              Launch Live Demo 🚀
+            </a>
+          </div>
         </div>
       </section>
 
