@@ -55,14 +55,14 @@ function App() {
 
             <div className="social-icons">
               {/* Email */}
-              <a href="mailto:your-email@gmail.com" className="icon-link" title="Email">
+              <a href="mailto:rhinnanthon@gmail.com" className="icon-link" title="Email">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                   <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                 </svg>
               </a>
               {/* GitHub */}
-              <a href="https://github.com/RAWCabas" target="_blank" rel="noreferrer" className="icon-link" title="GitHub">
+              <a href="www.linkedin.com/in/rhinn-anthon-william-cabas-61296424b" target="_blank" rel="noreferrer" className="icon-link" title="GitHub">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                 </svg>
@@ -123,17 +123,17 @@ function App() {
           <p className="slide-from-bottom" ref={portfolioBodyRef}>
             Showcasing production-ready frameworks, automation models, and application blueprints.
           </p>
-          
+
           {/* SeismicOne Project Card */}
           <div style={{ marginTop: '2.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: '1rem', maxWidth: '350px', margin: '2.5rem auto 0 auto' }}>
             {/* Sleek inline-styled earthquake SVG vector line icon */}
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M2 12h3l3-7 4 14 3-11 3 6h4" />
             </svg>
-            
+
             <h3 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#0f172a', margin: 0 }}>SeismicOne</h3>
             <p style={{ fontSize: '1rem', color: '#475569', margin: 0 }}>An AI-assisted Earthquake app</p>
-            
+
             <a href="https://rawcabas.github.io/seismic_one/" target="_blank" rel="noreferrer" style={{ marginTop: '0.5rem', display: 'inline-block', color: '#2563eb', fontWeight: '600', textDecoration: 'none' }}>
               Launch Live Demo 🚀
             </a>
